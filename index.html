@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwasi Derrick Kafui - Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        section {
+            padding: 80px 0;
+        }
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        a {
+            color: #0077b6;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #03045e;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #03045e;
+            color: white;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin-left: 30px;
+        }
+        .nav-links a {
+            color: #333;
+            font-weight: 500;
+        }
+        .nav-links a:hover {
+            color: #0077b6;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            text-align: center;
+            padding: 150px 0 100px 0;
+        }
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 30px;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* About Section */
+        #about {
+            background-color: #fff;
+        }
+
+        /* Portfolio Section */
+        #portfolio {
+            background-color: #f8f9fa;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .portfolio-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+        }
+        .portfolio-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .portfolio-info {
+            padding: 20px;
+        }
+
+        /* Resume Section */
+        #resume {
+            text-align: center;
+        }
+        .resume-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .social-links {
+            margin-bottom: 15px;
+        }
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Kwasi D. Kafui</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container hero-content">
+            <img src="YOUR_PHOTO.jpg" alt="Professional Photo of Kwasi" class="hero-img">
+            <h1>Kwasi Derrick Kafui</h1>
+            <p>Creative Graphic Designer & Data-Driven Digital Marketer</p>
+            <p>I bring brands to life and connect them with the right audience.</p>
+            <a href="#portfolio" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Kwasi, a versatile IT professional with a passion for creativity and data. I specialize in both graphic design and digital marketing, allowing me to create visually compelling work that is backed by strategic insight.</p>
+            <p>Whether I'm designing a brand identity, building a website, or optimizing a marketing campaign, my goal is always the same: to create meaningful connections and drive real results. I'm a quick learner, a proactive freelancer, and I thrive in remote collaborative environments.</p>
+            <p>I am currently seeking freelance opportunities where I can leverage my skills to help your business grow.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>My Portfolio</h2>
+            <p>A selection of my recent work in graphic design and web development.</p>
+            
+            <div class="portfolio-grid">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item">
+                    <img src="project1.jpg" alt="Description of Project 1" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <h3>Student Campaign Flyers</h3>
+                        <p>Series of engaging flyers and promotional materials designed for various student events at UPSA.</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item">
+                    <img src="project2.jpg" alt="Description of Project 2" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <h3>GIL Infographics</h3>
+                        <p>Data-driven infographics created with Adobe Illustrator for student performance reports at GIL.</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item">
+                    <img src="project3.jpg" alt="Description of Project 3" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <h3>Localshop E-Store</h3>
+                        <p>UI/UX design and full WordPress/WooCommerce development for a local artisan MVP store.</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item">
+                    <img src="project4.jpg" alt="Description of Project 4" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <h3>GRA Tax Portal Dashboard</h3>
+                        <p>Designed and developed user interface elements and data dashboards for the internal taxpayer portal.</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item">
+                    <img src="project5.jpg" alt="Description of Project 4" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <h3>GRA Tax Portal Dashboard</h3>
+                        <p>Designed and developed user interface elements and data dashboards for the internal taxpayer portal.</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item">
+                    <img src="project5.jpg" alt="Description of Project 4" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <h3>GRA Tax Portal Dashboard</h3>
+                        <p>Designed and developed user interface elements and data dashboards for the internal taxpayer portal.</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 7 -->
+                <div class="portfolio-item">
+                    <img src="project5.jpg" alt="Description of Project 4" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <h3>GRA Tax Portal Dashboard</h3>
+                        <p>Designed and developed user interface elements and data dashboards for the internal taxpayer portal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="container">
+            <h2>My Resume</h2>
+            <p>Download my CV to learn more about my experience and skills.</p>
+            <div class="resume-buttons">
+                <a href="KWASI DERRICK KAFUI_Graphic Designer.pdf" class="btn" download>Download CV (Graphic Design)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>I'm currently available for freelance projects. Feel free to reach out!</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:kwasi5777@gmail.com">kwasi5777@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+233594864081">+233 (0) 59 486 4081</a></p>
+                <p><strong>Location:</strong> Remote (Ghana)</p>
+            </div>
+            <div class="social-links">
+                <a href="www.linkedin.com/in/derrick-kafui-kwasi-496657375" target="_blank" aria-label="LinkedIn">LinkedIn</a> 
+                <a href="https://github.com/Eazi-26" target="_blank" aria-label="GitHub">GitHub</a> 
+            </div>
+            <a href="mailto:kwasi5777@gmail.com" class="btn">Send an Email</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Kwasi Derrick Kafui. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
